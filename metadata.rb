@@ -5,7 +5,7 @@ description      "Installs and configures rbenv"
 version          "0.9.1"
 
 %w{ centos redhat fedora }.each do |os|
-  depends os
+  supports os
 end
 
 %w{ git }.each do |cb|
