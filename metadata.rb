@@ -4,7 +4,7 @@ license          "Apache 2.0"
 description      "Installs and configures rbenv"
 version          "0.9.1"
 
-%w{ centos redhat fedora }.each do |os|
+%w{ ubuntu debian centos redhat fedora }.each do |os|
   supports os
 end
 
