@@ -31,9 +31,9 @@ class Chef
 
       def latest_ruby_build_version
         if File.exists?("#{ruby_build_binary_path}")
-          Proc.new do
+          # Proc.new do
             ruby_build_installed_verison.match(/#{node[:ruby_build][:version]}$/).nil?
-          end
+          # end
         else
           false
         end
