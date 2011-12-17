@@ -19,6 +19,8 @@
 #
 
 require 'chef/mixin/shell_out'
+require File.expand_path(File.join(File.dirname(__FILE__), 'mixin_rbenv'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'mixin_ruby_build'))
 
 class Chef
   module Rbenv
